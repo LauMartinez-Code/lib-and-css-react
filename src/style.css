@@ -1,0 +1,14 @@
+h1, p {
+    font-family: Lato;
+  }
+  
+  .container {
+    width: 400px;
+    border: 2px solid blue;
+    margin: 80px auto;
+    padding: 16px;
+  }
+  
+  button {
+    background-color: red;
+  }
