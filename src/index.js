@@ -1,56 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
 import './style.css';
-import faker from 'faker';
+import Warning from './Warning';
 import Message from './Message';
+import Counter from './Counter';
 
-const imgF = faker.image.avatar();
-
-const ImgTag = () => {
-  return <img src={imgF} alt="avatar Random"/>;
-};
-
-const Paragraph = () => {
-  return <p>Lautaro la siguiente acción acabará con el mundo :O</p>;
-};
-
-const Ejer4 = () => {
-  return (
-    <div className="container">
-      <ImgTag/>
-      <Paragraph/>
-      <button className="ui button primary">Aceptar</button>
-      <button className="ui button">Cancelar</button>
-    </div>
-  )
-}
-
-const Counter = (props) => {
-  const [count, setCount] = useState(0);
-  
-  const updateCount = () => setCount(count + 5);  
-
-  return (
-    <div className={props.clase}>
-      {count}
-      <button style={{margin:'10px'}} onClick={updateCount}>Sumar 5</button>
-    </div>
-  );
-
-};
 
 const App = () => {
   return (
     <div>
-      <Ejer4/>
+      <Warning clase="container"/>
       <br/>
-      <Message clase="contenedor">Definitivamente este es el fin del mundo como lo conociamos</Message>
+      <Message clase="contenedor">Este puede ser el fin del mundo como lo conociamos. - Platon</Message>
       <Counter clase="container"/>
     </div>
   );
 };
-
 
 
 ReactDOM.render(<App/>, document.getElementById("root"));
