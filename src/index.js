@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
 import './style.css';
-import Warning from './Warning';
-import Message from './Message';
-import Counter from './Counter';
+import Warning from './components/Warning';
+import Message from './components/Message';
+import Counter from './components/Counter';
 
 
 const App = () => {

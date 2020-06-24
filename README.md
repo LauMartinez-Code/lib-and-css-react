@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About the App
+Is a simple application for the practice of States in React.
+
+# To run this App:
+## Download npm dependencies
+At the project root folder run
+```bash
+npm install
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
